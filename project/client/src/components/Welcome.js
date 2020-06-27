@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import Artist  from './Artist.js' ;
-import Welcome  from './Welcome.js' ;
 
 const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
@@ -24,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function MainContent() {
+function Welcome() {
   const classes = useStyles();
 
   return (
@@ -32,14 +31,13 @@ function MainContent() {
     <main className={classes.fullWidth}>
       <div className={classes.toolbar} />
       <div className={classes.content}>
-      <Switch>
-          <Route path="/artist" component={Artist} />
-          <Route path="/" component={Welcome} />
-          </Switch>
-	        </div>
+      <Typography variant='h6' className={classes.title}>
+	      This is a simple web application  that provides a snapshot of the hottest artists, songs and musical trends
+        </Typography>
+      </div>
     </main>
     </React.Fragment>
   );
 }
 
-export default MainContent;
+export default Welcome;

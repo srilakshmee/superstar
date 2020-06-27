@@ -10,6 +10,8 @@ import ExitToApp from '@material-ui/icons/ExitToApp';
 import { makeStyles } from '@material-ui/core/styles';
 import { Avatar } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+import logo from '../images/music.jpg';
+import {  Link as RouterLink } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -44,19 +46,27 @@ function SideMenu() {
     >
       <Grid container justify='center' alignItems='center'>
         <Avatar
-          src='https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg'
+          src={logo}
           className={classes.bigAvatar}
         />
       </Grid>
       <List>
-        {['Profile', 'Sign Out'].map((text, index) => (
-          <ListItem button key={text}>
+
+          <ListItem button key='Home'>
             <ListItemIcon>
-              {index % 2 === 0 ? <AccountCircle /> : <ExitToApp />}
+              <AccountCircle />
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <RouterLink title="Home" className={classes.link} to='/'>Home</RouterLink>
+
           </ListItem>
-        ))}
+          <ListItem button key='Signout'>
+            <ListItemIcon>
+              <ExitToApp />
+            </ListItemIcon>
+            <ListItemText primary='Sign Out' />
+          </ListItem>
+
+
       </List>
     </Drawer>
   );
