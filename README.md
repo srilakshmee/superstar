@@ -1,4 +1,4 @@
-# superstar
+# Superstar
 Simple web application that provides a snapshot of the hottest artists, songs and musical trends.
 ## Client
 The UI compoenents are developed using Material UI as it provides ready to use React components that can be customised
