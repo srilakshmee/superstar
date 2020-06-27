@@ -1,7 +1,8 @@
 click==7.1.2
 coverage==4.2
 Flask==1.1.2
-Flask-Script==2.0.5
+Flask-Script==2.0.6
+Flask-Cors==3.0.3
 Flask-Testing==0.8.0
 itsdangerous==0.24
 Jinja2==2.11.2
