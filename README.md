@@ -1,12 +1,12 @@
 # Superstar
 Simple web application that provides a snapshot of the hottest artists, songs and musical trends.
 ## Client
-The UI compoenents are developed using Material UI as it provides ready to use React components that can be customised
+The UI compoenents are developed using Material UI as it provides ready to use React components which can be customised
 ### Top artists of 2020
-The data in data_by_artist.csv is filtered for year 2020 , sorted by popularity in descending order and the top 10 records and displayed on the UI
-The average duration of these top 10 songs are calculated using pandas mean function , converted to seconds by divding by 1000 and provided in the UI
+The data in data_by_artist.csv is filtered for year 2020 , sorted by popularity in descending order and the top 10 records are displayed on the UI.
+The average duration of these top 10 songs are calculated using pandas mean function , converted to seconds by divding by 1000 and provided to the UI
 ## Server
-Python Flask is used on the server side for providing the API support for the front end
+Python Flask is used on the server side for providing the API support for the front end.
 Pandas dataframe is used to analyse and filter and provide the relevant data from the csv file
 ## Quick Start
 
