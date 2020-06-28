@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { API_ROOT } from '../action/api-config';
 
 import MUIReport from './MUIReport.js';
 import { Typography } from '@material-ui/core';
@@ -14,7 +15,7 @@ class Artist extends React.Component {
    };
 
    componentDidMount() {
-     axios.get(`http://localhost:5000/trend/year/2020`)
+     axios.get(API_ROOT+`trend/year/2020`)
     .then(res => {
       const top_artists = res.data["artists"];
       const avg_duration = 'Average Duration of Popular Songs:'+res.data["avg_duration"];
