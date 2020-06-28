@@ -12,8 +12,8 @@ Pandas dataframe is used to analyse and filter and provide the relevant data fro
 
 ### Basics
 
-1. Activate a virtualenv
-1. Install the requirements
+1. Activate a virtualenv(virtualenv -v env in ubuntu , venv env in windows)
+1. Install the requirements (pip install -r requirements.txt)
 
 ### Set Environment Variables
 
