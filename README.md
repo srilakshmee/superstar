@@ -52,10 +52,10 @@ $ python manage.py cov
 ```
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-#To run from the docker image on a ubuntu system
+## To run from the docker image on a ubuntu system
 docker run -p 5000:5000 -d srilakh/superstar-demo:v1
 
-where srilakh/superstar-demo:v1 is the image available in docker hub
+where srilakh/superstar-demo:v1 is the image of the application available in docker hub
 
-#To deploy in AWS and make the app available on the public IP,use following command
+## To deploy in AWS and make the app available on the public IP,use following command
 python manage.py runserver --host=0.0.0.0
