@@ -14,7 +14,8 @@ app_settings = os.getenv(
 app.config.from_object(app_settings)
 CORS(app)
 
-from project.server.trend.views import trend_blueprint
+from project.server.trend.views import trend_blueprint,genre_blueprint
 from project.server.trend.home import home_blueprint
 app.register_blueprint(home_blueprint)
 app.register_blueprint(trend_blueprint)
+app.register_blueprint(genre_blueprint)
