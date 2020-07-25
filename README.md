@@ -59,3 +59,5 @@ where srilakh/superstar-demo:v1 is the image of the application available in doc
 
 ## To deploy in AWS and make the app available on the public IP,use following command
 python manage.py runserver --host=0.0.0.0
+
+## Access from deployed EC2 instance 
