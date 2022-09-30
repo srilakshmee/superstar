@@ -17,7 +17,7 @@ Werkzeug==1.0.1
 scipy==1.5.0
 seaborn==0.10.1
 matplotlib==3.2.2
-joblib==0.16.0
+joblib==1.2.0
 scikit-learn==0.23.1
 sklearn==0.0
 threadpoolctl==2.1.0
